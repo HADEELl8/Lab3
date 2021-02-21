@@ -1,11 +1,11 @@
 Lab 3 - Plastic Waste
 ================
 DSC 200 - Data Science I
-2021-02-06
+2021-02-21
 
-Student Name:
+Student Name:hadeel
 
-Student ID:
+Student ID:2201004073
 
 ``` r
 library(tidyverse)
@@ -102,7 +102,7 @@ ggplot(data = plastic_waste,
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent, 
                      fill = continent)) +
-  geom_density(alpha = 0.7)
+  geom_density(alpha = 0.1)
 ```
 
 This still doesn’t look great…
@@ -117,10 +117,15 @@ characteristic of the plotting geom.
 
 Answer here:
 
-*Now is a good time to knit your document and commit and push your
-changes to GitHub with an appropriate commit message. Make sure to
-commit and push all changed files so that your Git pane is cleared up
-afterwards.*
+Alpha indicates the opacity of the geom. Alpha values range from 0 to 1,
+with lower values corresponding to more transparent colors.
+
+Alpha can also be adjusted by color or aesthetic fill aesthetic if
+either aesthetic provides color values using an rgb specification
+(“\#RRGGBBAA”), where AA refers to transparency values *Now is a good
+time to knit your document and commit and push your changes to GitHub
+with an appropriate commit message. Make sure to commit and push all
+changed files so that your Git pane is cleared up afterwards.*
 
 And yet another way to visualize this relationship is using side-by-side
 box plots.

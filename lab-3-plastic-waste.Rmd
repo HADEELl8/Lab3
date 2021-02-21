@@ -5,9 +5,9 @@ date: "`r Sys.Date()`"
 output: github_document
 ---
 
-Student Name:
+Student Name:hadeel
 
-Student ID:
+Student ID:2201004073
 
 ```{r include = FALSE}
 knitr::opts_chunk$set(eval = FALSE)
@@ -92,7 +92,7 @@ ggplot(data = plastic_waste,
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent, 
                      fill = continent)) +
-  geom_density(alpha = 0.7)
+  geom_density(alpha = 0.1)
 ```
 
 This still doesn't look great...
@@ -103,6 +103,9 @@ E3.  Describe why we defined the `color` and `fill` of the curves by mapping aes
 
 Answer here:
 
+Alpha indicates the opacity of the geom.  Alpha values range from 0 to 1, with lower values corresponding to more transparent colors.
+
+ Alpha can also be adjusted by color or aesthetic fill aesthetic if either aesthetic provides color values using an rgb specification ("#RRGGBBAA"), where AA refers to transparency values
 *Now is a good time to knit your document and commit and push your changes to GitHub with an appropriate commit message. Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
 
 And yet another way to visualize this relationship is using side-by-side box plots.
